@@ -34,7 +34,7 @@ def makeWebhookResult(req):
     parameters = result.get("parameters")
     zone = parameters.get("Departure-location")
 
-    cost = {'Home':100, 'City':200, 'Roma Street':300, 'Wooloongabba':400, 'ann street':500, 'Blunder road':111, 'Moggill road':111}
+    cost = {'Home':5, 'City':7, 'Roma Street':4.50, 'Wooloongabba':7.65, 'ann street':8.50, 'Blunder road':7.25, 'Moggill road':8.75}
 
     speech = "The price for your journey to " + zone + " is " + str(cost[zone]) + " dollars."
 
